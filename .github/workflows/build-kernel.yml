@@ -251,6 +251,7 @@ jobs:
 
     - name: Build kernel
       run: |
+        ls $GITHUB_WORKSPACE/kernel_workspace/
         cd $GITHUB_WORKSPACE/kernel_workspace/android-kernel
         export PATH=$GITHUB_WORKSPACE/kernel_workspace/clang-aosp/bin:$PATH
         export PATH=$GITHUB_WORKSPACE/kernel_workspace/gcc-32/bin:$PATH
